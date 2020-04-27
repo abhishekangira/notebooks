@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="chrome_theme" name="theme-color" content="#fbadc5">
+  <title>Notebooks App</title>
+  <link rel="stylesheet" href="dist/index.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap">
+</head>
+
+<body>
+  <header>
+    <h1>My Notebooks App</h1>
+  </header>
+  <main>
+    <div class="sub-header">
+      <h2>
+        My Notebooks
+      </h2>
+    </div>
+    <div id="no-notes">
+      You have no notebooks till now!
+      <a class="btnPrim" href="pages/new-note.html">Add Your First Notebook</a>
+    </div>
+    <a id="btn-delete-all" href="/" class="btnWarn">Delete All</a> <br>
+    <a id="btn-create-home" class="btnSec" href="pages/new-note.html">New Notebook</a>
+    <div id="notes-list">
+    </div>
+  </main>
+  <footer>
+    <p>Made with ❤️ by Abhishek Angira</p>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
