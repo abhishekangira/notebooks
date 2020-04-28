@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta id="chrome_theme" name="theme-color" content="#fbadc5">
   <title>Notebooks App</title>
-  <link rel="stylesheet" href="dist/index.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap">
 </head>
@@ -25,7 +25,16 @@
       You have no notebooks till now!
       <a class="btnPrim" href="pages/new-note.html">Add Your First Notebook</a>
     </div>
-    <a id="btn-delete-all" href="/" class="btnWarn">Delete All</a> <br>
+    <button id="btn-delete-all" class="btnWarn">Delete All</button> <br>
+    <div id="modal-delete-all" class="modal">
+      <div class="modal-box">
+        <p>You sure you want to delete all the notebooks?</p>
+        <div>
+          <a href="/" class="btnWarn modal-yes">Damn Right</a>
+          <button class="btnSec modal-no">Umm.. Ok No</button>
+        </div>
+      </div>
+    </div>
     <a id="btn-create-home" class="btnSec" href="pages/new-note.html">New Notebook</a>
     <div id="notes-list">
     </div>
@@ -33,7 +42,7 @@
   <footer>
     <p>Made with ❤️ by Abhishek Angira</p>
   </footer>
-  <script type="module" src="index.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
