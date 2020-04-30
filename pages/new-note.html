@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="chrome_theme" name="theme-color" content="#fbadc5" />
+    <title>Create Notebook</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta id="chrome_theme" name="theme-color" content="#fbadc5">
-  <title>Create Notebook</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap">
-</head>
-
-<body>
-  <header>
-    <a href="../index.html">
-      <h1>My Notebooks App</h1>
-    </a>
-  </header>
-  <div id="modal-add-chapter" class="modal">
-    <div class="modal-box">
-      <p>Do you want to create a new chapter now?</p>
-      <div>
-        <a href="/" class="btnWarn modal-yes">Sure why not</a>
-        <a href="/" class="btnSec modal-no">Maybe later</a>
+  <body>
+    <header>
+      <a href="../index.html">
+        <h1>My Notebooks App</h1>
+      </a>
+    </header>
+    <div id="modal-add-chapter" class="modal">
+      <div class="modal-box">
+        <p>Do you want to create a new chapter now?</p>
+        <div>
+          <a href="/" class="btnWarn modal-yes">Sure why not</a>
+          <a href="/" class="btnSec modal-no">Maybe later</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="modal-empty-note-name" class="modal">
-    <div class="modal-box">
-      <p>Notebook name can't be empty 😑</p>
-      <div>
-        <button class="btnSec modal-ok">Okay smartass</button>
+    <div id="modal-empty-note-name" class="modal">
+      <div class="modal-box">
+        <p>Notebook name can't be empty 😑</p>
+        <div>
+          <button class="btnSec modal-ok">Okay smartass</button>
+        </div>
       </div>
     </div>
-  </div>
-  <main>
-    <div class="sub-header">
-      <h2>
-        Create Notebook
-      </h2>
-    </div>
-    <div class="newnote-form">
-      <p>Enter a name for your new Notebook</p>
-      <input id="inp-create" type="text" placeholder="Notebook Name" autofocus>
-      <a id="btn-create" class="btnPrim">Create</a>
-      <a class="btnPrim" href="../index.html">Cancel</a>
-    </div>
-  </main>
-  <footer>
-    <p>Made with ❤️ by Abhishek Angira</p>
-  </footer>
-  <script type="module" src="../js/index.js"></script>
-</body>
-
+    <main>
+      <div class="sub-header">
+        <h2>
+          Create Notebook
+        </h2>
+      </div>
+      <div class="newnote-form">
+        <p>Enter a name for your new Notebook</p>
+        <input
+          id="inp-create"
+          type="text"
+          placeholder="Notebook Name"
+          autofocus
+        />
+        <a id="btn-create" class="btnPrim">Create</a>
+        <a class="btnPrim" href="../index.html">Cancel</a>
+      </div>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Abhishek Angira</p>
+    </footer>
+    <script type="module" src="../js/index.js"></script>
+  </body>
 </html>

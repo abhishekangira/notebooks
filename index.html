@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="chrome_theme" name="theme-color" content="#fbadc5" />
+    <title>Notebooks App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta id="chrome_theme" name="theme-color" content="#fbadc5">
-  <title>Notebooks App</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lobster&amp;family=Satisfy&amp;display=swap">
-</head>
-
-<body>
-  <header>
-    <h1>My Notebooks App</h1>
-  </header>
-  <main>
-    <div class="sub-header">
-      <h2>
-        My Notebooks
-      </h2>
-    </div>
-    <div id="no-notes">
-      You have no notebooks till now!
-      <a class="btnPrim" href="pages/new-note.html">Add Your First Notebook</a>
-    </div>
-    <button id="btn-delete-all" class="btnWarn">Delete All</button> <br>
-    <div id="modal-delete-all" class="modal">
-      <div class="modal-box">
-        <p>You sure you want to delete all the notebooks?</p>
-        <div>
-          <a href="/" class="btnWarn modal-yes">Damn Right</a>
-          <button class="btnSec modal-no">Umm.. Ok No</button>
+  <body>
+    <header>
+      <h1>My Notebooks App</h1>
+    </header>
+    <main>
+      <div class="sub-header">
+        <h2>
+          My Notebooks
+        </h2>
+      </div>
+      <div id="no-notes">
+        You have no notebooks till now!
+        <a class="btnPrim" href="pages/new-note.html"
+          >Add Your First Notebook</a
+        >
+      </div>
+      <button id="btn-delete-all" class="btnWarn">Delete All</button> <br />
+      <div id="modal-delete-all" class="modal">
+        <div class="modal-box">
+          <p>You sure you want to delete all the notebooks?</p>
+          <div>
+            <a href="/" class="btnWarn modal-yes">Damn Right</a>
+            <button class="btnSec modal-no">Umm.. Ok No</button>
+          </div>
         </div>
       </div>
-    </div>
-    <a id="btn-create-home" class="btnSec" href="pages/new-note.html">New Notebook</a>
-    <div id="notes-list">
-    </div>
-  </main>
-  <footer>
-    <p>Made with ❤️ by Abhishek Angira</p>
-  </footer>
-  <script type="module" src="js/index.js"></script>
-</body>
-
+      <a id="btn-create-home" class="btnSec" href="pages/new-note.html"
+        >New Notebook</a
+      >
+      <div id="notes-list"></div>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Abhishek Angira</p>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>
